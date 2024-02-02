@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 function Card({ data, reference }) {
     return (
-        <motion.div drag dragConstraints={reference} whileDrag={{ scale: 1.15 }} className="relative overflow-hidden bg-black text-white h-72 w-60 rounded-[40px] py-10 px-8">
+        <motion.div drag dragConstraints={reference} dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }} whileDrag={{ scale: 1.15 }} className="relative overflow-hidden bg-slate-950 text-white h-72 w-60 rounded-[40px] py-10 px-8">
             <FaFileAlt />
             <p className="relative text-sm mt-5 font-semibold leading-tight ">{data.desc}</p>
             <div className=" footer w-full left-0  absolute bottom-0 ">

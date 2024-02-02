@@ -20,12 +20,18 @@ function Foreground() {
             fileSize: "1.4mb",
             close: true,
             tag: { isOpen: false, tagTitle: "Download Now", tagColor: "green" }
+        },
+        {
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+            fileSize: "1.4mb",
+            close: false,
+            tag: { isOpen: true, tagTitle: "Download Now", tagColor: "blue" }
         }
     ]
 
 
     return (
-        <div ref={ref} className="fixed flex gap-10 flex-shrink-0 flex-wrap w-full h-screen bg-blue-100 p-4 z-[3] bg-opacity-30 ">
+        <div ref={ref} className="fixed flex gap-10 flex-shrink-0 flex-wrap w-full h-screen bg-blue-100 p-4 z-[3] bg-opacity-[0.1] ">
             {data.map((item, index) => {
                 return <Card key={index} reference={ref} data={item} />
             })}
