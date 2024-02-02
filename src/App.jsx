@@ -1,11 +1,9 @@
-
-
+import Background from "./components/Background"
 function App() {
-
   return (
-    <>
-      <h1>Framer Motion</h1>
-    </>
+    <div className="w-full h-screen bg-slate-950 relative ">
+      <Background />
+    </div>
   )
 }
 
